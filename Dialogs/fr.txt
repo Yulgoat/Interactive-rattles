@@ -1,0 +1,87 @@
+--- Hub ---
+
+--- Craft ---
+Ce que nous savons actuellement des techniques de fabrication de l'époque indique que le hochet a été fabriqué par cuisson dans un moule bipartite.
+
+Ce moule est d'abord tapissé d'argile, à la main. À l'aide de la cuillière sur votre gauche, déposez l'argile contenue dans le seau à votre droite. < wait >
+
+L'argile est ensuite étalée à la main. Répétez l'opération pour le deuxième moule. < wait >
+
+Une fois les deux parties tapissées, la bille d'argile est percée par une tige en bois.
+
+L'ensemble est placé dans une fente sur l'une des deux moitiés. Placez-le dans la fente de la moitié qui vous convient. < wait >
+
+Le moule bi-partite est alors refermé, et mis à la cuisson. Sélectionnez le moule avec la gachette pour lancer la cuisson. < wait >
+
+Il est important de maintenir la bille isolée des paroies du mur assez longtemps pour que les deux se solidifient indépendamment. C'est le rôle de la tige de bois. < wait >
+
+Une fois la cuisson terminée, les deux moitiés du moule sont enlevées. Sélectionnez chaque moitiée et faites-la glisser pour l'enlever. < wait >
+
+Prenez le hochet dans vos mains et essayer de l'agiter.
+
+Le hochet ne fait pas de bruit pour le moment : la tige placée avant la cuisson maintient toujours la bille en place. Retirez la tige. < wait >
+
+Agitez le hochet. Il possède à présent ce son reconnaissable.
+
+--- Map ---
+
+Il nous manque beaucoup d'informations sur le parcours que le hochet a suivi pour arriver jusqu'au Musée des Beaux Arts de Rennes.
+
+Nous pouvons déterminer qu'il a été fabriqué vers 300 avant notre ère, dans ce qui est maintenant la Grèce. < wait >
+
+Nous supposons qu'il a été découvert lors d'une fouille et distribué sans traçage jusqu'en Italie, où il est réapparu au XIXe siècle, puis a été racheté par le Louvre. < wait >
+
+D'autres théories sont possibles, mais dans tous les cas : nous ne savons pas exactement où le hochet a été découvert.
+
+Sans ce contexte, l'interprétation archéologique est beaucoup plus compliquée.
+
+Dans ce cas, comment savons-nous que notre objet est un hochet ?
+
+Lorsque les archéologues sont face à des artefacts dont ils ne connaissent pas le contexte, 
+
+ils le comparent à des objets connus dont on connait la provenance.
+
+Face à vous, vous avez plusieurs objets : une statuette de lion, un jouet en forme de chat, un hochet pour enfant et notre objet en forme de cochon.
+
+Saisissez la statuette de lion et observez la. < wait >
+
+Par comparaison, l'exposition en tant que statuette est la première intuition que nous avons concernant l'usage de notre objet en forme de cochon.
+
+Saisissez désormais le jouet en forme de chat. < wait >
+
+Une autre utilisation que nous pourrions imaginer pour notre objet serait celle d'un jouet pour enfant, notre objet ayant aussi la forme d'un animal.
+
+Sélectionnez maintenant notre objet en forme de cochon et agitez-le. < wait >
+
+On remarque qu'en le secouant, quelque chose bouge et émet un son à l'intérieur, donc nous pouvons affirmer qu'il ne s'agit pas d'une simple statuette.
+
+Prenez maintenant le hochet pour enfants et secouez-le. < wait >
+
+Comme notre objet, ce hochet émet un son et nous pouvons aussi sentir les collisions d'un grelot.
+
+Si l'on se resitue à l'époque de la Grèce antique, nous pouvons donc imaginer que cet objet pouvait servir de hochet à cette époque.
+
+Néanmoins, même si nous pouvons déterminer avec assez de certitude où, quand, et comment le hochet a été fabriqué, il nous manquera toujours des informations.
+
+En effet, un objet peut posséder une utilisation propre qui ne peut lui être attribuée que dans le contexte de la culture qui l'a fabriqué.
+
+
+
+
+
+Sélectionnez successivement les objets pour obtenir des informations sur leur provenance et leur niveau de correspondance avec le hochet. < wait >
+
+Maintenant que vous avez inspecté les objets, déposez celui qui se rapproche le plus du hochet sur l'emplacement indiqué. < wait >
+
+Ce n'est pas le bon objet, essayez-en un autre. < wait >
+
+Effectivement <?????????????????????????????>.
+
+
+Prenez ce caillou par exemple. Il s'agit d'un simple morceau de roche. Pour nos ancêtres, c'est un outil critique qui a permi de dompter le feu. < wait >
+
+
+< ?????????????????????????? >
+
+--- Utilisation ---
+
