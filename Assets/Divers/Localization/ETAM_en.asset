@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ETAM_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 9848d0ad5a9e01642b98cf28bef0f1a5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20109770752
+    m_Localized: And here the text in English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1158727865143296
+    m_Localized: GrabMaBall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27848593119559680
+    m_Localized: Back to main menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39856077785468928
+    m_Localized: 'This is a very very very very very very very very very very very
+      very very very very long string for testing purposes '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39870679965437952
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41663743226744832
+    m_Localized: Discovery scene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41663905454034944
+    m_Localized: Crafting scene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41663997703557120
+    m_Localized: Usage scene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41678055177654272
+    m_Localized: '- Press to interact
+
+      - Hold to grab'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41722723907080192
+    m_Localized: Click on a floating sphere to teleport to another scene, or grab
+      the Rattle to test it!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: CraftingScript_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: cb68545a062b5f7498e720abfed6c7e1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 66165870592
+    m_Localized: "Ce que nous savons actuellement des techniques de fabrication de
+      l'\xE9poque indique que le hochet a \xE9t\xE9 fabriqu\xE9 par cuisson dans
+      un moule bipartite."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164933341184
+    m_Localized: "Ce moule est d'abord tapiss\xE9 d'argile, \xE0 la main. \xC0 l'aide
+      de la cuilli\xE8re sur votre gauche, d\xE9posez l'argile contenue dans le seau
+      \xE0 votre droite."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188467580928
+    m_Localized: "L'argile est ensuite \xE9tal\xE9e \xE0 la main. R\xE9p\xE9tez l'op\xE9ration
+      pour le deuxi\xE8me moule."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 202736603136
+    m_Localized: "Une fois les deux parties tapiss\xE9es, la bille d'argile est perc\xE9e
+      par une tige en bois."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3086752616448
+    m_Localized: "L'ensemble est plac\xE9 dans une fente sur l'une des deux moiti\xE9s.
+      Placez-le dans la fente de la moiti\xE9 qui vous convient."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3091336990720
+    m_Localized: "Le moule bipartite est alors referm\xE9, et mis \xE0 la cuisson.
+      S\xE9lectionnez le moule avec la gachette pour lancer la cuisson."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3095866839040
+    m_Localized: "Il est important de maintenir la bille isol\xE9e des paroies du
+      mur assez longtemps pour que les deux se solidifient ind\xE9pendamment. C'est
+      le r\xF4le de la tige de bois.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100052754432
+    m_Localized: "Une fois la cuisson termin\xE9e, les deux moiti\xE9s du moule sont
+      enlev\xE9es. S\xE9lectionnez chaque moiti\xE9e et faites-la glisser pour l'enlever.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3814061707264
+    m_Localized: Prenez le hochet dans vos mains et essayer de l'agiter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3939928576000
+    m_Localized: "Agitez le hochet. Il poss\xE8de \xE0 pr\xE9sent ce son reconnaissable."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3937881755648
+    m_Localized: "Le hochet ne fait pas de bruit pour le moment : la tige plac\xE9e
+      avant la cuisson maintient toujours la bille en place. Retirez la tige."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12447713529856
+    m_Localized: "On avait pos\xE9 une nomenclature sur l'\xE9criture des cl\xE9s
+      de la table en partant d'un truc du genre \"general.moins_generall.detail\",
+      avec un point entre les ensembles/sous-ensembles, et du snake case pour \xE9crire
+      plusieurs mots \xE0 la suite. Sauf que les . dans un enum ne passe pas, et
+      \xE9tant donn\xE9 que j'ai voulu blinder LocalizedStringModifier avec un enum
+      de TOUTES LES CLES pour les scripts (\xE7a permet d'avoir un drop down dans
+      SEVEN et pas se taper toutes les cl\xE9s \xE0 la mano), bah pour le texte des
+      scripts au moins de mettez pas de . dans les cl\xE9s ;) \n(ou changez la fa\xE7on
+      de faire, mais HF)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168556667113472
+    m_Localized: "Ce sc\xE9nario est \xE0 pr\xE9sent termin\xE9. Vous pouvez revenir
+      au menu principal en cliquant sur la sph\xE8re \xE0 votre droite."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: CraftingScript_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: cb68545a062b5f7498e720abfed6c7e1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 66165870592
+    m_Localized: What we currently know of pottery techniques at the time suggests
+      that the rattle was baked in a two-part mold.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164933341184
+    m_Localized: 'The inside of the mold is first covered with clay, by hand. Using
+      the spoon on your left, move some clay from the bucket on your right into this
+      half of the mold.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188467580928
+    m_Localized: The clay is spread by hand on the walls of the mold. Repeat the
+      operation for the other half.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 202736603136
+    m_Localized: Once both halves are covered, the clay marble is pierced with a
+      wooden needle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3086752616448
+    m_Localized: The assembly is then placed inside a slit on one of the halves of
+      the mold. Place it on the half you want.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3091336990720
+    m_Localized: The two-part mold is then closed, needle still sticking out, and
+      cooked. Select the mold to send it off to the furnace.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3095866839040
+    m_Localized: It is important that the ball remain isolated from the clay covering
+      the walls of the mold, so that both harden separately. This is why a needle
+      is driven through the ball.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100052754432
+    m_Localized: 'Once the clay has hardened, both halves of the mold are removed.
+      Select the halves and slide them away from the rattle.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3814061707264
+    m_Localized: Take the rattle in your hands and try to shake it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3939928576000
+    m_Localized: Shake the rattle. It now emits a distinctive sound.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3937881755648
+    m_Localized: 'The rattle is silent for now : the needle still holds the ball.
+      Remove it.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12447713529856
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168556667113472
+    m_Localized: This scenario is now over. You can go back to the main menu by clicking
+      the sphere on your right.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

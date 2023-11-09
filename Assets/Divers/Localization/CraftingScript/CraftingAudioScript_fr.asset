@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: CraftingAudioScript_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: dd86fde512820dd429a1dfb57a5ea2f9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 24789061632
+    m_Localized: 90a257fe9e44a76448fbb459c36a6434
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26454200320
+    m_Localized: 97aac2737d781ac4aa4e344c9f4e1b14
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28069007360
+    m_Localized: d9143efc3f339d44fa9190ae6cfa1071
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29490876416
+    m_Localized: 236845067e49531428fb842b7fca0cf4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31118266368
+    m_Localized: 9477f32c23e1f6247af1b7473a9f1abf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34297548800
+    m_Localized: 648ff588d9f43c44cb679fe292ac67e6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32309448704
+    m_Localized: 433210e97cec7fc45b4faecf1492fe80
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35375484928
+    m_Localized: c6ffceaa489a92246985359c5c765dec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36679913472
+    m_Localized: dd13bc71e4065624690d3c9b908b5c7f
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38118559744
+    m_Localized: cf9f451debd2722428d6b68b73368c5d
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39540428800
+    m_Localized: 139a4e51ad9331247bc0daef60e6ecaf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40870023168
+    m_Localized: 5f7f00ffc3a0afc4cb4b97457ca5a804
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

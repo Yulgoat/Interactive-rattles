@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ETAM_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 9848d0ad5a9e01642b98cf28bef0f1a5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20109770752
+    m_Localized: "Voici notre texte en fran\xE7ais"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1158727865143296
+    m_Localized: La boule oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27848593119559680
+    m_Localized: Retour au menu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39856077785468928
+    m_Localized: "C'est un string tr\xE8s tr\xE8s tr\xE8s tr\xE8s tr\xE8s tr\xE8s
+      tr\xE8s tr\xE8s tr\xE8s tr\xE8s tr\xE8s tr\xE8s tr\xE8s tr\xE8s tr\xE8s tr\xE8s
+      tr\xE8s tr\xE8s tr\xE8s tr\xE8s long pour du testing"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39870679965437952
+    m_Localized: Langage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41663743226744832
+    m_Localized: "Sc\xE8ne de d\xE9couverte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41663905454034944
+    m_Localized: "Sc\xE8ne de fabrication"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41663997703557120
+    m_Localized: "Sc\xE8ne d'utilisation"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41678055177654272
+    m_Localized: "- Appuyer pour interagir\n- Maintenir appuy\xE9 pour attraper"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41722723907080192
+    m_Localized: "Cliquez sur une des sph\xE8res flottantes pour vous t\xE9l\xE9porter
+      vers une autre sc\xE8ne, ou prenez le Hochet dans vos mains pour le tester!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

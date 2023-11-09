@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DiscoveryScript_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 960b0da8e30ab704d984ea50945735d1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1464202244096
+    m_Localized: "We are missing a ton of information about the path the rattle took
+      to the Mus\xE9e des Beaux Arts of Rennes.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305046055104512
+    m_Localized: We can determine that it was manufactured around 300BC in what is
+      nowadays Greece.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305126246002688
+    m_Localized: We can suppose that it was extracted from illegal excavations, and
+      exported to Italy, where the Louvre Museum bought it from a private collector
+      in the 19th century.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305446862794752
+    m_Localized: "Other theories are possible, but in any case : we do not know the
+      exact location of its discovery.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305588911288320
+    m_Localized: 'Without that context, interpreting things around the rattle is
+      much more complex.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305653302243328
+    m_Localized: 'And yet, how can we know that our object is a rattle in the first
+      place ? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305779102003200
+    m_Localized: 'When archeologists are faced with artifacts that they do not the
+      origin of, '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305916264132608
+    m_Localized: "they compare them to known libraries of objects we have traced
+      to known points in time and space.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306012217225216
+    m_Localized: "There are many objects in front of you : a lion statuette, a toy
+      shaped like a cat, a rattle for kids and our object.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306072531316736
+    m_Localized: "Grab the lion statuette and observe it.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306145797419008
+    m_Localized: "By comparing it to our object, our first intuition could be that
+      our object is in fact a statuette as well.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306215427059712
+    m_Localized: "Now select the cat toy.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306268656971776
+    m_Localized: "Considering the shape and size of our object, a toy for children
+      is another usage we can think of.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306380976238592
+    m_Localized: 'Grab our pig-shaped object and shake it.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306582038589440
+    m_Localized: "We notice that there is something moving inside that makes a sound,
+      so we can confirm that it's not a simple statuette.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306651454320640
+    m_Localized: "Finally, grab the rattle for children and shake it.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306731762659328
+    m_Localized: 'Like our object, this rattle has something colliding inside and
+      making a sound.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306838201511936
+    m_Localized: "Going back to the time of the Ancient Greece, we can imagine that
+      this object could have been used as a rattle.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 682346349146112
+    m_Localized: "However, even after determining with relative certainty where,
+      when and how the rattle was made, we will always lack information about it.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 682411411189760
+    m_Localized: "Indeed, an object possesses a contextual usage that is assigned
+      to it by the culture of the people who made it.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1179026731380736
+    m_Localized: This scenario is now over. You can go back to the main menu by clicking
+      the sphere on your right.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

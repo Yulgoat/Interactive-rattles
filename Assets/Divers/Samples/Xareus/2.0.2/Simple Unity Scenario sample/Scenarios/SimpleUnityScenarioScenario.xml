@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SimpleUnityScenarioScenario" label="MyScenario" version="5.1.0.0" xmlns="http://www.insa-rennes.fr/Xareus.Scenarios">
+  <extendedInfo>
+    <unityEditor xmlns="">
+      <version>1.2</version>
+    </unityEditor>
+  </extendedInfo>
+  <sequence xsi:type="SafePetriNet" id="Root" label="Root">
+    <extendedInfo>
+      <unityEditor xmlns="">
+        <comments />
+      </unityEditor>
+    </extendedInfo>
+    <sequence xsi:type="Place" id="Place_0" label="Start">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-0.785714149" y="-0.285720825" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_1" label="Wait for trigger">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-199.2143" y="200.142868" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_2" label="Wait for collision">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-0.9285717" y="199.571426" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_3" label="Wait for distance">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="200.785721" y="200.857147" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_4" label="Wait for state change">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="400.071442" y="199.857132" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_5" label="Wait for state change">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="499.785736" y="199.857132" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_6" label="Wait for state change">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="600.5" y="199.857117" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_7" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-199.071426" y="399.428558" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_8" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.2142868" y="399.2857" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_9" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="200.071426" y="401" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_10" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="399.5" y="400" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_11" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="500.0714" y="400.857117" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_12" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="600.7857" y="399.857117" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_13" label="End">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.5" y="800.5714" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="SafePetriNet" id="Net_0" label="SubNet">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-0.331176758" y="600.363647" />
+          <comments />
+        </unityEditor>
+      </extendedInfo>
+      <sequence xsi:type="Place" id="Place_14" label="In">
+        <extendedInfo>
+          <unityEditor xmlns="">
+            <position x="0" y="-200" />
+          </unityEditor>
+        </extendedInfo>
+      </sequence>
+      <sequence xsi:type="Place" id="Place_15" label="Out">
+        <extendedInfo>
+          <unityEditor xmlns="">
+            <position x="0" y="0" />
+          </unityEditor>
+        </extendedInfo>
+      </sequence>
+      <transition id="Transition_9" label="Press 'A'">
+        <extendedInfo>
+          <unityEditor xmlns="">
+            <position x="-100" y="-100" />
+          </unityEditor>
+        </extendedInfo>
+        <event id="Transition_9" label="Press 'A'">
+          <sensorCheck classname="Xareus.Scenario.Input.KeyPressedSensor,Xareus.Scenario.Input">
+            <param value="A" type="UnityEngine.KeyCode,UnityEngine.CoreModule" name="Key" />
+          </sensorCheck>
+        </event>
+        <upstreamSequence idref="Place_14" />
+        <downstreamSequence idref="Place_15" />
+      </transition>
+      <transition id="Transition_10" label="Press 'B'">
+        <extendedInfo>
+          <unityEditor xmlns="">
+            <position x="100" y="-100" />
+          </unityEditor>
+        </extendedInfo>
+        <event id="Transition_10" label="Press 'B'">
+          <sensorCheck classname="Xareus.Scenario.Input.KeyPressedSensor,Xareus.Scenario.Input">
+            <param value="B" type="UnityEngine.KeyCode,UnityEngine.CoreModule" name="Key" />
+          </sensorCheck>
+        </event>
+        <upstreamSequence idref="Place_14" />
+        <downstreamSequence idref="Place_15" />
+      </transition>
+      <initialSequence idref="Place_14">
+        <tokenInit classname="Xareus.Scenarios.TokenInit.EmptyTokenInit,Xareus.Scenarios" />
+      </initialSequence>
+      <finalSequence idref="Place_15" />
+    </sequence>
+    <transition id="Transition_0" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-0.357142866" y="101" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_0" label="" />
+      <upstreamSequence idref="Place_0" />
+      <downstreamSequence idref="Place_1" />
+      <downstreamSequence idref="Place_2" />
+      <downstreamSequence idref="Place_3" />
+      <downstreamSequence idref="Place_4" />
+      <downstreamSequence idref="Place_5" />
+      <downstreamSequence idref="Place_6" />
+    </transition>
+    <transition id="Transition_1" label="OnTrigger =&gt; Deactivate">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-199.642853" y="299.857117" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_1" label="OnTrigger =&gt; Deactivate">
+        <sensorCheck classname="Xareus.Scenarios.Unity.ObjectCollisionSensor,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 1">
+            <param value="9153b803-c674-472a-a311-31b2f96be4e6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 2">
+            <param value="04acfa79-1eca-4ef9-9c61-b9bdd57068c1" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="In Collision" />
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="04acfa79-1eca-4ef9-9c61-b9bdd57068c1" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_1" />
+      <downstreamSequence idref="Place_7" />
+    </transition>
+    <transition id="Transition_2" label="OnCollision =&gt; ChangeColor">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.5" y="299.714264" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2" label="OnCollision =&gt; ChangeColor">
+        <sensorCheck classname="Xareus.Scenarios.Unity.ObjectCollisionSensor,Xareus.Unity.Librairies">
+          <param value="True" type="System.Boolean,mscorlib" name="In Collision" />
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 1">
+            <param value="9153b803-c674-472a-a311-31b2f96be4e6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 2">
+            <param value="9171adad-55ce-41c7-8f38-6179ec6e4a7d" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.ChangeColorEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.Renderer,UnityEngine.CoreModule" name="Renderer">
+            <param value="be8e3523-52dd-43d3-aa98-a94f27d97677" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="#0000FFFF" type="UnityEngine.Color,UnityEngine.CoreModule" name="Color" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_2" />
+      <downstreamSequence idref="Place_8" />
+    </transition>
+    <transition id="Transition_3" label="AtDistance =&gt; Enable">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="200.5" y="300.2857" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_3" label="AtDistance =&gt; Enable">
+        <sensorCheck classname="Xareus.Scenarios.Unity.DistanceSensor,Xareus.Unity.Librairies">
+          <param type="UnityEngine.Transform,UnityEngine.CoreModule" name="transform1">
+            <param value="e967381f-67b4-49f1-83c2-3723ad04bd87" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.Transform,UnityEngine.CoreModule" name="transform2">
+            <param value="38c090bc-2e5d-4736-9247-20c156df8e3f" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="2" type="System.Single,mscorlib" name="distance" />
+          <param value="True" type="System.Boolean,mscorlib" name="ignore height" />
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetEnabledEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.Behaviour,UnityEngine.CoreModule" name="Behaviour">
+            <param value="90dcdf79-c2e7-474f-b6e1-c6a78766fdb1" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Enabled Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_3" />
+      <downstreamSequence idref="Place_9" />
+    </transition>
+    <transition id="Transition_4" label="Check bool =&gt; pass">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="399.642853" y="299.428558" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_4" label="Check bool =&gt; pass">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="Xareus.Samples.SimpleUnityScenario.TestComponentWithState,SimpleUnityScenario" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="7985d070-0586-4ed7-8993-9550f645d7f6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="Xareus.Samples.SimpleUnityScenario.TestComponentWithState,SimpleUnityScenario" name="DeclaringType" />
+            <param value="boolean" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_4" />
+      <downstreamSequence idref="Place_10" />
+    </transition>
+    <transition id="Transition_5" label="Check string =&gt; pass">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="500.642883" y="299.142853" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_5" label="Check string =&gt; pass">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="Xareus.Samples.SimpleUnityScenario.TestComponentWithState,SimpleUnityScenario" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="7985d070-0586-4ed7-8993-9550f645d7f6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="Xareus.Samples.SimpleUnityScenario.TestComponentWithState,SimpleUnityScenario" name="DeclaringType" />
+            <param value="str" name="MemberName" />
+          </param>
+          <param value="salut" type="System.String,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_5" />
+      <downstreamSequence idref="Place_11" />
+    </transition>
+    <transition id="Transition_6" label="Check int =&gt; pass">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="600.0714" y="299.857117" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_6" label="Check int =&gt; pass">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="Xareus.Samples.SimpleUnityScenario.TestComponentWithState,SimpleUnityScenario" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="7985d070-0586-4ed7-8993-9550f645d7f6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="Xareus.Samples.SimpleUnityScenario.TestComponentWithState,SimpleUnityScenario" name="DeclaringType" />
+            <param value="integer" name="MemberName" />
+          </param>
+          <param value="2" type="System.Int32,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_6" />
+      <downstreamSequence idref="Place_12" />
+    </transition>
+    <transition id="Transition_7" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-0.9285717" y="499.428558" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_7" label="" />
+      <upstreamSequence idref="Place_7" />
+      <upstreamSequence idref="Place_8" />
+      <upstreamSequence idref="Place_9" />
+      <upstreamSequence idref="Place_10" />
+      <upstreamSequence idref="Place_11" />
+      <upstreamSequence idref="Place_12" />
+      <downstreamSequence idref="Net_0" />
+    </transition>
+    <transition id="Transition_8" label="">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.668823242" y="699.363647" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_8" label="" />
+      <upstreamSequence idref="Net_0" />
+      <downstreamSequence idref="Place_13" />
+    </transition>
+    <initialSequence idref="Place_0">
+      <tokenInit classname="Xareus.Scenarios.TokenInit.EmptyTokenInit,Xareus.Scenarios" />
+    </initialSequence>
+    <finalSequence idref="Place_13" />
+  </sequence>
+</scenario>

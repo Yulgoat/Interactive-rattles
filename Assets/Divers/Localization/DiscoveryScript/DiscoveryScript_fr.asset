@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DiscoveryScript_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 960b0da8e30ab704d984ea50945735d1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1464202244096
+    m_Localized: "Il nous manque beaucoup d'informations sur le parcours que le hochet
+      a suivi pour arriver jusqu'au Mus\xE9e des Beaux Arts de Rennes.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305046055104512
+    m_Localized: "Nous pouvons d\xE9terminer qu'il a \xE9t\xE9 fabriqu\xE9 vers 300
+      avant notre \xE8re, dans ce qui est maintenant la Gr\xE8ce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305126246002688
+    m_Localized: "Nous supposons qu'il a \xE9t\xE9 d\xE9couvert lors d'une fouille
+      et distribu\xE9 sans tra\xE7age jusqu'en Italie, o\xF9 il est r\xE9apparu au
+      XIXe si\xE8cle, puis f\xFBt rachet\xE9 par le Louvre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305446862794752
+    m_Localized: "D'autres th\xE9ories sont possibles, mais dans tous les cas : nous
+      ne savons pas exactement o\xF9 le hochet a \xE9t\xE9 d\xE9couvert.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305588911288320
+    m_Localized: "Sans ce contexte, l'interpr\xE9tation arch\xE9ologique est beaucoup
+      plus compliqu\xE9e.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305653302243328
+    m_Localized: "Dans ce cas, comment savons-nous que notre objet est un hochet
+      ?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305779102003200
+    m_Localized: "Lorsque les arch\xE9ologues sont face \xE0 des artefacts dont ils
+      ne connaissent pas le contexte,"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305916264132608
+    m_Localized: "ils le comparent \xE0 des objets connus dont on connait la provenance.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306012217225216
+    m_Localized: "Face \xE0 vous, vous avez plusieurs objets : une statuette de lion,
+      un jouet en forme de chat, un hochet pour enfant et notre objet en forme de
+      cochon.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306072531316736
+    m_Localized: Saisissez la statuette de lion et observez la.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306145797419008
+    m_Localized: "Par comparaison, l'exposition en tant que statuette est la premi\xE8re
+      intuition que nous avons concernant l'usage de notre objet en forme de cochon.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306215427059712
+    m_Localized: "Saisissez d\xE9sormais le jouet en forme de chat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306268656971776
+    m_Localized: "Une autre utilisation que nous pourrions imaginer pour notre objet
+      serait celle d'un jouet pour enfant, notre objet ayant aussi la forme d'un
+      animal.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306380976238592
+    m_Localized: "S\xE9lectionnez maintenant notre objet en forme de cochon et agitez-le."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306582038589440
+    m_Localized: "On remarque qu'en le secouant, quelque chose bouge et \xE9met un
+      son \xE0 l'int\xE9rieur, donc nous pouvons affirmer qu'il ne s'agit pas d'une
+      simple statuette.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306651454320640
+    m_Localized: Prenez maintenant le hochet pour enfants et secouez-le.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306731762659328
+    m_Localized: "Comme notre objet, ce hochet \xE9met un son et nous pouvons aussi
+      sentir les collisions d'un grelot.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306838201511936
+    m_Localized: "Si l'on se resitue \xE0 l'\xE9poque de la Gr\xE8ce antique, nous
+      pouvons donc imaginer que cet objet pouvait servir de hochet \xE0 cette \xE9poque.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 682346349146112
+    m_Localized: "N\xE9anmoins, m\xEAme si nous pouvons d\xE9terminer avec assez
+      de certitude o\xF9, quand, et comment le hochet a \xE9t\xE9 fabriqu\xE9, il
+      nous manquera toujours des informations.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 682411411189760
+    m_Localized: "En effet, un objet peut poss\xE9der une utilisation propre qui
+      ne peut lui \xEAtre attribu\xE9e que dans le contexte de la culture qui l'a
+      fabriqu\xE9.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1179026731380736
+    m_Localized: "Ce sc\xE9nario est \xE0 pr\xE9sent termin\xE9. Vous pouvez revenir
+      au menu principal en cliquant sur la sph\xE8re \xE0 votre droite."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

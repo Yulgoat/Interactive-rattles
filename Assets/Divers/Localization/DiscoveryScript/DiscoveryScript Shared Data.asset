@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: DiscoveryScript Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: DiscoveryScript
+  m_TableCollectionNameGuidString: 960b0da8e30ab704d984ea50945735d1
+  m_Entries:
+  - m_Id: 1464202244096
+    m_Key: discovery_00
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305046055104512
+    m_Key: discovery_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305126246002688
+    m_Key: discovery_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305446862794752
+    m_Key: discovery_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305588911288320
+    m_Key: discovery_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305653302243328
+    m_Key: discovery_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305779102003200
+    m_Key: discovery_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305916264132608
+    m_Key: discovery_07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306012217225216
+    m_Key: discovery_08
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306072531316736
+    m_Key: discovery_09
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306145797419008
+    m_Key: discovery_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306215427059712
+    m_Key: discovery_11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306268656971776
+    m_Key: discovery_12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306380976238592
+    m_Key: discovery_13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306582038589440
+    m_Key: discovery_14
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306651454320640
+    m_Key: discovery_15
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306731762659328
+    m_Key: discovery_16
+    m_Metadata:
+      m_Items: []
+  - m_Id: 306838201511936
+    m_Key: discovery_17
+    m_Metadata:
+      m_Items: []
+  - m_Id: 682346349146112
+    m_Key: discovery_18
+    m_Metadata:
+      m_Items: []
+  - m_Id: 682411411189760
+    m_Key: discovery_19
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1179026731380736
+    m_Key: discovery_end
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1651774230818
