@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 615b6276762653940918c50f0377c631
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bille: {instanceID: 0}
+  - pineToBePoped: {instanceID: 0}
+  - pine: {instanceID: 0}
+  - rHand: {instanceID: 0}
+  - lHand: {instanceID: 0}
+  - locaTab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
