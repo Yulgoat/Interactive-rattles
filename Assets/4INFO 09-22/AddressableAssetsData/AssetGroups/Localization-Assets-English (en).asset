@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-English (en)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-English (en)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5e8a3b1512c943a4fa46c561c68eaa80
+  m_SerializeEntries:
+  - m_GUID: e7f4475ac32d15649b93c75fa8bbb7c6
+    m_Address: crafting_00
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: ea342c8f35a81ea46a033ac053e472f3
+    m_Address: crafting_01
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 1e84be1925f72e14c984e1379ba5dd95
+    m_Address: crafting_02
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: b518293805397ea488c76d85610525e3
+    m_Address: crafting_03
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: ae3b8df454b60d945a9718db88968409
+    m_Address: crafting_04
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: afb89b04b64c40240a42b89605a0c149
+    m_Address: crafting_05
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 60606da1ababc984caaaba7ebd168a8b
+    m_Address: crafting_06
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 7fffc95081e407d4199fd0cf6f3597ff
+    m_Address: crafting_07
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: c4c607d701edde74681d1b9a25215208
+    m_Address: crafting_08
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 04784b635bdb1994bb7476ffcecb7abf
+    m_Address: crafting_09
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 06d91b550d5878d4b9703f9e498a8f76
+    m_Address: crafting_10
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 574340aec6949f74da38e302d83e6ac5
+    m_Address: crafting_end
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 72896c81665d3dc4db6558207d2944b2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 98099c2a86158d445b21fb18c34fcc90, type: 2}
+    - {fileID: 11400000, guid: 4a20de32359c1cc45a9e91cef915f7da, type: 2}

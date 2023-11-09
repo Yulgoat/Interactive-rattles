@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SevenTestScenario" label="MyScenario" version="4.1" xmlns="http://www.insa-rennes.fr/#SEVEN">
+  <contextInit classname="SEVEN.Extra.DefaultContextInit, SEVEN.Extra, Version=4.6.1.0, Culture=neutral, PublicKeyToken=null" />
+  <sequence xsi:type="SafePetriNet" id="Root" label="Root">
+    <extendedInfo>
+      <sevenEditorExtension xmlns="">
+        <comments />
+      </sevenEditorExtension>
+    </extendedInfo>
+    <sequence xsi:type="Place" id="Place_0" label="Start">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="500" y="500" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_1" label="Wait for trigger">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="300" y="700" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_2" label="Wait for collision">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="500" y="700" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_3" label="Wait for distance">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="700" y="700" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_4" label="">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="700" y="900" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_5" label="">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="500" y="900" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_6" label="">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="300" y="900" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_7" label="End">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="500" y="1100" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_8" label="Wait for correct state">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="900.4286" y="700" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_9" label="">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="900.4286" y="900" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_10" label="Wait for correct state">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="1000.42859" y="700" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_11" label="">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="1000.42859" y="900" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_12" label="wait for correct state">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="1100.42859" y="700" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_13" label="Place_13">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="1099.42859" y="900" />
+        </sevenEditorExtension>
+      </extendedInfo>
+    </sequence>
+    <transition id="Transition_0" label="">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="500" y="600" />
+        </sevenEditorExtension>
+      </extendedInfo>
+      <event id="Event_0" label="" />
+      <upstreamSequence idref="Place_0" />
+      <downstreamSequence idref="Place_1" />
+      <downstreamSequence idref="Place_2" />
+      <downstreamSequence idref="Place_3" />
+      <downstreamSequence idref="Place_8" />
+      <downstreamSequence idref="Place_10" />
+      <downstreamSequence idref="Place_12" />
+    </transition>
+    <transition id="Transition_1" label="OnTrigger =&gt; Deactivate">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="300" y="800" />
+        </sevenEditorExtension>
+      </extendedInfo>
+      <event id="Event_1" label="OnTrigger =&gt; Deactivate">
+        <sensorCheck classname="OnTriggerSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param type="Collisions,Assembly-CSharp" name="collisions">
+            <param value="b862de3c-c550-429c-8058-a43e344dd560" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="529553f9-4b0c-48b6-b66c-468710a55fc1" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="SetActiveEffector, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param value="False" type="System.Boolean,mscorlib" name="setActiveValue" />
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="529553f9-4b0c-48b6-b66c-468710a55fc1" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_1" />
+      <downstreamSequence idref="Place_6" />
+    </transition>
+    <transition id="Transition_2" label="OnCollision =&gt; ChangeColor">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="500" y="800" />
+        </sevenEditorExtension>
+      </extendedInfo>
+      <event id="Event_2" label="OnCollision =&gt; ChangeColor">
+        <sensorCheck classname="OnCollisionSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param type="Collisions,Assembly-CSharp" name="collisions">
+            <param value="b862de3c-c550-429c-8058-a43e344dd560" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="27752036-afc0-4f71-b1d4-4fa96c848009" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="ChangeColorEffector, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param value="" type="System.String,mscorlib" name="color" />
+          <param value="BLUE" type="ChangeColorEffector+ColorEnum,Assembly-CSharp" name="colorName" />
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="27752036-afc0-4f71-b1d4-4fa96c848009" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_2" />
+      <downstreamSequence idref="Place_5" />
+    </transition>
+    <transition id="Transition_3" label="AtDistance =&gt; Enable">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="700" y="800" />
+        </sevenEditorExtension>
+      </extendedInfo>
+      <event id="Event_3" label="AtDistance =&gt; Enable">
+        <sensorCheck classname="DistanceSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param value="2" type="System.Single,mscorlib" name="distance" />
+          <param type="UnityEngine.Transform,UnityEngine.CoreModule" name="transform1">
+            <param value="2bc88428-fe71-4e0b-9c3e-c8ee8d0a6db1" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.Transform,UnityEngine.CoreModule" name="transform2">
+            <param value="a8a1be05-931e-45ab-a0fa-065cabf7a45c" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="SetEnabledEffector, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param value="" type="System.String,mscorlib" name="monoBehaviour" />
+          <param value="True" type="System.Boolean,mscorlib" name="enabledValue" />
+          <param type="UnityEngine.Behaviour,UnityEngine.CoreModule" name="behaviour">
+            <param value="18776149-7cb7-4f30-9fdf-2706b02d5c7b" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_3" />
+      <downstreamSequence idref="Place_4" />
+    </transition>
+    <transition id="Transition_4" label="">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="500" y="1000" />
+        </sevenEditorExtension>
+      </extendedInfo>
+      <event id="Event_4" label="" />
+      <upstreamSequence idref="Place_5" />
+      <upstreamSequence idref="Place_4" />
+      <upstreamSequence idref="Place_6" />
+      <upstreamSequence idref="Place_9" />
+      <upstreamSequence idref="Place_11" />
+      <upstreamSequence idref="Place_13" />
+      <downstreamSequence idref="Place_7" />
+    </transition>
+    <transition id="Transition_5" label="Check bool">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="900.4286" y="800" />
+        </sevenEditorExtension>
+      </extendedInfo>
+      <event id="Event_5" label="Check bool">
+        <sensorCheck classname="SEVEN.Unity.CheckMemberValueSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param value="TestComponentWithState,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="42b343ed-7f83-42ea-9774-6843322ee9de" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="TestComponentWithState,Assembly-CSharp" name="DeclaringType" />
+            <param value="boolean" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_8" />
+      <downstreamSequence idref="Place_9" />
+    </transition>
+    <transition id="Transition_6" label="Check string">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="1000.42859" y="800" />
+        </sevenEditorExtension>
+      </extendedInfo>
+      <event id="Event_6" label="Check string">
+        <sensorCheck classname="SEVEN.Unity.CheckMemberValueSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param value="TestComponentWithState,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="42b343ed-7f83-42ea-9774-6843322ee9de" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="TestComponentWithState,Assembly-CSharp" name="DeclaringType" />
+            <param value="str" name="MemberName" />
+          </param>
+          <param value="salut" type="System.String,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_10" />
+      <downstreamSequence idref="Place_11" />
+    </transition>
+    <transition id="Transition_7" label="Check int">
+      <extendedInfo>
+        <sevenEditorExtension xmlns="">
+          <position x="1100.42859" y="800" />
+        </sevenEditorExtension>
+      </extendedInfo>
+      <event id="Event_7" label="Check int">
+        <sensorCheck classname="SEVEN.Unity.CheckMemberValueSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <param value="TestComponentWithState,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="42b343ed-7f83-42ea-9774-6843322ee9de" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="TestComponentWithState,Assembly-CSharp" name="DeclaringType" />
+            <param value="integer" name="MemberName" />
+          </param>
+          <param value="2" type="System.Int32,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_12" />
+      <downstreamSequence idref="Place_13" />
+    </transition>
+    <initialSequence idref="Place_0" />
+    <finalSequence idref="Place_7" />
+  </sequence>
+</scenario>

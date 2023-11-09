@@ -1,0 +1,2172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Crafting : Main Scenario" label="Crafting : Main Scenario" version="5.0" xmlns="http://www.insa-rennes.fr/Xareus.Scenarios">
+  <extendedInfo>
+    <sevenEditorExtension xmlns="">
+      <editorConfiguration showPriority="True" />
+    </sevenEditorExtension>
+    <unityEditor xmlns="">
+      <version>1.2</version>
+    </unityEditor>
+  </extendedInfo>
+  <contextInit classname="Xareus.Scenarios.ContextInit.DefaultContextInit,Xareus.Scenarios" />
+  <sequence xsi:type="SafePetriNet" id="Root" label="Root">
+    <extendedInfo>
+      <unityEditor xmlns="">
+        <comments>
+          <comment>
+            <value>&lt;comment id="Comment_2" label="Comment_2" text="Proper translation/animation to be replaced here&amp;#xA;" height="71,42859" width="157,1429" isFolded="false"&gt;&lt;position x="2810,807" y="-955,1294" /&gt;&lt;/comment&gt;</value>
+            <value>&lt;comment id="Comment_3" label="Comment_3" text="Ideas for animations :&amp;#xA;   - Pine and ball : show the merge of the twoo&amp;#xA;   - Proper cooking animation&amp;#xA;&amp;#xA;" height="105,7143" width="258,2857" isFolded="false"&gt;&lt;position x="824,564" y="-828,36" /&gt;&lt;/comment&gt;</value>
+            <value>&lt;comment id="Comment_4" label="Comment_4" text="Proper translation/animation here too&amp;#xA;Correct the spawned mold location &amp;#xA;" height="69,28575" width="160,7143" isFolded="false"&gt;&lt;position x="3579,108" y="-846,0692" /&gt;&lt;/comment&gt;</value>
+            <value>&lt;comment id="Comment_5" label="Comment_5" text="Fun fact : if you try to reactivate the force grab simultaneously for the two Rays (by splitting the token in SEVEN), one of the two object will become None during the runtime and causing an error" height="89,09094" width="283,6364" isFolded="false"&gt;&lt;position x="4672,757" y="-802,059" /&gt;&lt;/comment&gt;</value>
+            <value>&lt;comment id="Comment_6" label="Comment_6" text="We may add a little delay before reactivating the hands to avoid problems" height="87" width="185" isFolded="false"&gt;&lt;position x="3916,249" y="-72,409" /&gt;&lt;/comment&gt;</value>
+            <value>&lt;comment id="Comment_7" label="Comment_7" text="Because the mold_with_clay mesh isn't symetrical, and we&amp;#xA;are too lazy to fix it" height="82,54546" width="167,2727" isFolded="false"&gt;&lt;position x="2000,411" y="-899,2174" /&gt;&lt;/comment&gt;</value>
+            <value>&lt;comment id="Comment_8" label="Comment_8" text="May want to create scripts that will do a lot of effectors only things, since it is very messy when using SEVEN only" height="85,72727" width="325" isFolded="false"&gt;&lt;position x="2017,117" y="-1115,094" /&gt;&lt;/comment&gt;</value>
+            <value>&lt;comment id="Comment_0" label="Comment_0" text="Localization string tests&amp;#xA;&amp;#xA;Update : the locale change is not like that anymore" height="70,90913" width="171,8182" isFolded="false"&gt;&lt;position x="61,27248" y="-1111,664" /&gt;&lt;/comment&gt;</value>
+          </comment>
+        </comments>
+      </unityEditor>
+    </extendedInfo>
+    <sequence xsi:type="Place" id="Place_0" label="Init">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-500.0713" y="-699.071533" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_2" label="Place_2">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-99.5988159" y="-600.617" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_3" label="Place_3">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-99.95264" y="-500.662476" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_4" label="Place_4">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-99.95264" y="-400.662476" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_5" label="Place_5">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-99.95264" y="-300.662476" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_6" label="Place_6">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-100.952637" y="-200.662476" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_7" label="Place_7">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="200.811157" y="-300.80542" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_8" label="Place_8">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="201.954041" y="-500.80542" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_9" label="Place_9">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="200.176025" y="-699.246948" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_1" label="Place_1">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="400.176025" y="-601.246948" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_10" label="Place_10">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="400.176025" y="-500.246948" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_11" label="Place_11">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="399.747437" y="-400.532654" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_12" label="Place_12">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="399.747437" y="-300.532654" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_13" label="Place_13">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="399.747437" y="-200.532654" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_14" label="Place_14">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="645.747437" y="-204.532654" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_15" label="Place_15">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="699.527832" y="-400.7964" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_16" label="Place_16">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="699.777832" y="-499.5464" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_17" label="Place_17">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="699.027832" y="-599.0464" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_36" label="Place_36">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1499.64319" y="-600.937561" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_37" label="Place_37">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1700.02991" y="-601.326233" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_39" label="Place_39">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2199.15234" y="-699.7344" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_43" label="Place_43">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2800.032" y="-800.3759" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_44" label="Place_44">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2799.12" y="-699.4977" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_45" label="Place_45">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3000.6228" y="-700.580566" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_46" label="Place_46">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3299.954" y="-600.744" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_46_0" label="Place_46">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3299.44067" y="-500.6424" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_47" label="Place_47">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3498.6167" y="-699.3796" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_48" label="Place_48">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3499.7207" y="-600.4457" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_49" label="Place_49">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3499.2207" y="-500.763855" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_50" label="Place_50">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3901.77" y="-599.08" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_51" label="Place_51">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3900.865" y="-700.045532" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_52" label="Place_52">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4099.722" y="-699.688354" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_53" label="Place_53">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4100.65039" y="-600.545532" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_55" label="Place_55">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4301.71533" y="-500.576477" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_54" label="Place_54">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4600.332" y="-600.511536" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_59" label="Place_59">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4600.68945" y="-500.310181" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_60" label="Place_60">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4299.579" y="-699.1884" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_61" label="Place_61">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4300.508" y="-600.545532" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_58" label="Place_58">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4599.865" y="-699.2943" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_66" label="Place_66">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="900.0698" y="-600.6802" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_68" label="Place_68">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3000.82373" y="-599.01" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_69" label="Place_69">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3199.33" y="-699.700562" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_70" label="Place_70">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3900.74951" y="-400.7051" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_71" label="Place_71">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3900.82373" y="-499.01" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_73" label="Place_73">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1900.57178" y="-699.5834" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_74" label="Place_74">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1899.07178" y="-599.0834" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_75" label="Place_75">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1899.57178" y="-500.083374" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_76" label="Place_76">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2099.46021" y="-699.4913" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_77" label="Place_77">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2199.85522" y="-600.290161" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_78" label="Place_78">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2199.36182" y="-500.181152" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_79" label="Place_79">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2599.6167" y="-700.9575" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_23" label="Place_23">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5199.24756" y="-599.264343" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_32" label="Place_32">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5400.413" y="-500.714478" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_34" label="Place_34">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="6100.10742" y="-599.673" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_33" label="Place_33">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4900.46" y="-500.704224" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_35" label="Place_35">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.105056763" y="-999.1814" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_19" label="Place_19">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-100.517883" y="-700.1129" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_56" label="Place_56">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-300.2157" y="-699.290649" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_64" label="Place_64">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="400.100647" y="-700.3509" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_18" label="Place_18">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1099.30469" y="-600.4188" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_20" label="Place_20">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1299.48645" y="-600.451233" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_21" label="Place_21">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2399.40137" y="-500.046753" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_65_0_1_0" label="Place_65">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2399.154" y="-899.7202" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_22" label="Place_22">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3500.51855" y="-400.8696" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_24" label="Place_24">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3699.86182" y="-400.339" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_25" label="Place_25">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4599.862" y="-400.339" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_65_0_1_0_0_0_0" label="Place_65">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4899.93848" y="-399.646729" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_26" label="Place_26">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5400.15527" y="-600.068848" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_27" label="Place_27">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5699.89258" y="-599.2152" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_28" label="Place_28">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5093.6626" y="-503.010254" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_29" label="Place_29">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5093.376" y="-452.6413" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_30" label="Place_30">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="700.1593" y="-299.488159" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="Place" id="Place_38" label="Place_38">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5900.831" y="-600.3508" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <transition id="Transition_0" label="Move Clay to Spoon">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-0.5316467" y="-699.4352" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_0" label="Move Clay to Spoon">
+        <sensorCheck classname="Xareus.Scenarios.Unity.ObjectCollisionSensor,Xareus.Unity.Librairies">
+          <param value="True" type="System.Boolean,mscorlib" name="In Collision" />
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 1">
+            <param value="62e2be5b-9fdb-4491-9b97-2152b44880c2" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 2">
+            <param value="089568f6-d7d1-4ae2-8b92-98207d25968a" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="3ffcf7a3-2ae6-486e-a1b0-947fb5d032f3" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_19" />
+      <downstreamSequence idref="Place_2" />
+    </transition>
+    <transition id="Transition_1" label="Reduce Clay">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.333984375" y="-600.7988" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_1" label="Reduce Clay">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="23224b42-a947-4c2c-b747-1116e082e660" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localScale" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="2" type="System.Single,mscorlib" name="X" />
+            <param value="0.24" type="System.Single,mscorlib" name="Y" />
+            <param value="2" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_2" />
+      <downstreamSequence idref="Place_3" />
+    </transition>
+    <transition id="Transition_2" label="Move Spoon Full to Mold_A">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-0.9526367" y="-499.662476" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2" label="Move Spoon Full to Mold_A">
+        <sensorCheck classname="Xareus.Scenarios.Unity.ObjectCollisionSensor,Xareus.Unity.Librairies">
+          <param value="True" type="System.Boolean,mscorlib" name="In Collision" />
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 1">
+            <param value="62e2be5b-9fdb-4491-9b97-2152b44880c2" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 2">
+            <param value="4ef9c532-5630-4fdd-a7e9-f092dd79b936" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="4ef9c532-5630-4fdd-a7e9-f092dd79b936" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_3" />
+      <downstreamSequence idref="Place_4" />
+    </transition>
+    <transition id="Transition_2_1" label="Inflate Model Mesh">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.04736328" y="-400.662476" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2_1_1" label="Inflate Model Mesh">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="aa0d181a-2dfe-4cd6-aa98-f707d88f34df" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_4" />
+      <downstreamSequence idref="Place_5" />
+    </transition>
+    <transition id="Transition_2_1_1" label="Hide Clay in Spoon">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.04736328" y="-300.662476" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2_1_1_1" label="Hide Clay in Spoon">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="3ffcf7a3-2ae6-486e-a1b0-947fb5d032f3" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_5" />
+      <downstreamSequence idref="Place_6" />
+    </transition>
+    <transition id="Transition_2_1_1_1" label="Play squishy sound">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="0.04736328" y="-200.662476" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2_1_1_1_1" label="Play squishy sound">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.PlaySoundEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="8b1acd6d-d344-4cd9-b3c3-dc6f64b020f8" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.AudioClip,UnityEngine.AudioModule" name="Audio Clip">
+            <param value="a6c770e3-649a-4a48-8020-3aa0cdf82b67" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="False" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param value="10" type="System.Single,mscorlib" name="Volume" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_6" />
+      <downstreamSequence idref="Place_7" />
+    </transition>
+    <transition id="Transition_3" label="Wait before switching">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="200.239685" y="-399.662537" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_3" label="Wait before switching">
+        <effectorUpdate classname="Xareus.Scenarios.Time.WaitEffector,Xareus.Scenarios.Extra">
+          <param value="1" type="System.Double,mscorlib" name="delay" />
+          <param value="SECOND" type="SEVEN.Time.TimeUnit,SEVEN.Extra" name="unit" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_7" />
+      <downstreamSequence idref="Place_8" />
+    </transition>
+    <transition id="Transition_0_1" label="Move Clay to Spoon">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="499.811157" y="-700.8054" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_0_1_1" label="Move Clay to Spoon">
+        <sensorCheck classname="Xareus.Scenarios.Unity.ObjectCollisionSensor,Xareus.Unity.Librairies">
+          <param value="True" type="System.Boolean,mscorlib" name="In Collision" />
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 1">
+            <param value="62e2be5b-9fdb-4491-9b97-2152b44880c2" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 2">
+            <param value="089568f6-d7d1-4ae2-8b92-98207d25968a" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="3ffcf7a3-2ae6-486e-a1b0-947fb5d032f3" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_64" />
+      <downstreamSequence idref="Place_1" />
+    </transition>
+    <transition id="Transition_1_1" label="Reduce Clay">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="500.676758" y="-600.169067" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_1_1_1" label="Reduce Clay">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="23224b42-a947-4c2c-b747-1116e082e660" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localScale" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="2" type="System.Single,mscorlib" name="X" />
+            <param value="0.12" type="System.Single,mscorlib" name="Y" />
+            <param value="2" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_1" />
+      <downstreamSequence idref="Place_10" />
+    </transition>
+    <transition id="Transition_4" label="Switch molds">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="200.954041" y="-599.8054" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_4" label="Switch molds">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.InvokeUnityObjectMethodEffector,Xareus.Unity.Librairies">
+          <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="type" />
+          <param type="System.Reflection.MethodInfo,mscorlib" name="method">
+            <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="DeclaringType" />
+            <param value="switchingMolds" type="System.String,mscorlib" name="MethodName" />
+            <param type="System.Type[],mscorlib" name="Types">
+              <param value="UnityEngine.GameObject,UnityEngine.CoreModule" type="System.RuntimeType,mscorlib" name="elem0" />
+              <param value="UnityEngine.GameObject,UnityEngine.CoreModule" type="System.RuntimeType,mscorlib" name="elem1" />
+            </param>
+          </param>
+          <param value="" type="Xareus.Unity.MethodParameters,Xareus.Unity.Utils" name="parameters">
+            <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="elem0">
+              <param value="00c126a8-fd46-4875-84c9-07d983ddc7bb" type="System.Guid,mscorlib" name="UFID" />
+            </param>
+            <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="elem1">
+              <param value="2d891ea6-f128-486d-a40f-0480795ee0f8" type="System.Guid,mscorlib" name="UFID" />
+            </param>
+          </param>
+          <param type="UnityEngine.MonoBehaviour,UnityEngine.CoreModule" name="Calling Object">
+            <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/P_mold_A" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_8" />
+      <downstreamSequence idref="Place_9" />
+    </transition>
+    <transition id="Transition_2_2" label="Move Spoon Full to Mold_B">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="500.747437" y="-500.532654" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2_2_1" label="Move Spoon Full to Mold_B">
+        <sensorCheck classname="Xareus.Scenarios.Unity.ObjectCollisionSensor,Xareus.Unity.Librairies">
+          <param value="True" type="System.Boolean,mscorlib" name="In Collision" />
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 1">
+            <param value="62e2be5b-9fdb-4491-9b97-2152b44880c2" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Object 2">
+            <param value="ebdfa4f4-2ee3-484c-8c11-8c81db12d5de" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="ebdfa4f4-2ee3-484c-8c11-8c81db12d5de" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_10" />
+      <downstreamSequence idref="Place_11" />
+    </transition>
+    <transition id="Transition_2_1_2" label="Inflate Model Mesh">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="501.747437" y="-401.532654" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2_1_2_1" label="Inflate Model Mesh">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="4c77c397-3f70-441c-abaf-8703f2636647" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_11" />
+      <downstreamSequence idref="Place_12" />
+    </transition>
+    <transition id="Transition_2_1_1_2" label="Hide Clay in Spoon">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="500.747437" y="-300.532654" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2_1_1_2_1" label="Hide Clay in Spoon">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="3ffcf7a3-2ae6-486e-a1b0-947fb5d032f3" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_12" />
+      <downstreamSequence idref="Place_13" />
+    </transition>
+    <transition id="Transition_2_1_1_1_1" label="Play squishy sound">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="501.747437" y="-201.532654" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_2_1_1_1_1_1" label="Play squishy sound">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.PlaySoundEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="8b1acd6d-d344-4cd9-b3c3-dc6f64b020f8" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.AudioClip,UnityEngine.AudioModule" name="Audio Clip">
+            <param value="a6c770e3-649a-4a48-8020-3aa0cdf82b67" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="False" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param value="10" type="System.Single,mscorlib" name="Volume" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_13" />
+      <downstreamSequence idref="Place_14" />
+    </transition>
+    <transition id="Transition_5" label="Move Clay Container">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="799.527832" y="-200.296387" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_5" label="Move Clay Container">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="7f5d8641-c90c-40da-b72d-cd3be09041ac" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localPosition" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="9" type="System.Single,mscorlib" name="X" />
+            <param value="2.5" type="System.Single,mscorlib" name="Y" />
+            <param value="-1.75" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_14" />
+      <downstreamSequence idref="Place_30" />
+    </transition>
+    <transition id="Transition_5_1" label="Move Mold_A">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="800.527832" y="-400.2964" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_5_1_1" label="Move Mold_A">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="9808e224-e36b-4857-8da4-d52900b85d4c" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localPosition" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="7" type="System.Single,mscorlib" name="X" />
+            <param value="3" type="System.Single,mscorlib" name="Y" />
+            <param value="-1.4" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_15" />
+      <downstreamSequence idref="Place_16" />
+    </transition>
+    <transition id="Transition_5_2" label="Move Mold_B">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="800.777832" y="-599.5464" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_5_2_1" label="Move Mold_B">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="53a886e4-a2f9-4957-81c5-ecda5ec9364f" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localPosition" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="7" type="System.Single,mscorlib" name="X" />
+            <param value="3" type="System.Single,mscorlib" name="Y" />
+            <param value="1" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_17" />
+      <downstreamSequence idref="Place_66" />
+    </transition>
+    <transition id="Transition_5_1_1" label="Rotate Mold_A">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="799.527832" y="-499.0464" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_5_1_1_1" label="Rotate Mold_A">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.InvokeUnityObjectMethodEffector,Xareus.Unity.Librairies">
+          <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="type" />
+          <param type="System.Reflection.MethodInfo,mscorlib" name="method">
+            <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="DeclaringType" />
+            <param value="rotateMoldFromAnotherMold" type="System.String,mscorlib" name="MethodName" />
+            <param type="System.Type[],mscorlib" name="Types">
+              <param value="UnityEngine.GameObject,UnityEngine.CoreModule" type="System.RuntimeType,mscorlib" name="elem0" />
+              <param value="UnityEngine.GameObject,UnityEngine.CoreModule" type="System.RuntimeType,mscorlib" name="elem1" />
+            </param>
+          </param>
+          <param value="" type="Xareus.Unity.MethodParameters,Xareus.Unity.Utils" name="parameters">
+            <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="elem0">
+              <param value="2d891ea6-f128-486d-a40f-0480795ee0f8" type="System.Guid,mscorlib" name="UFID" />
+            </param>
+            <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="elem1">
+              <param value="00c126a8-fd46-4875-84c9-07d983ddc7bb" type="System.Guid,mscorlib" name="UFID" />
+            </param>
+          </param>
+          <param type="UnityEngine.MonoBehaviour,UnityEngine.CoreModule" name="Calling Object">
+            <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/P_mold_B" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_16" />
+      <downstreamSequence idref="Place_17" />
+    </transition>
+    <transition id="Transition_19" label="Wait for Pine in Mold A">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1600.18372" y="-701.7878" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_19" label="Wait for Pine in Mold A">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="PineSocketHandler,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="576163ec-06dd-462c-b7c5-1b6eb0a967b7" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="PineSocketHandler,Assembly-CSharp" name="DeclaringType" />
+            <param value="isPineSet" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.BoxCollider,UnityEngine.PhysicsModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="5a4d5fd3-faa0-434e-a25c-2d4f441509ab" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_36" />
+      <downstreamSequence idref="Place_37" />
+    </transition>
+    <transition id="Transition_19_1" label="Wait for Pine in Mold B">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1600.876" y="-600.94165" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_19_1_1" label="Wait for Pine in Mold B">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="PineSocketHandler,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="1e7881bf-5a32-4357-ad37-08779a038ca9" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="PineSocketHandler,Assembly-CSharp" name="DeclaringType" />
+            <param value="isPineSet" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.BoxCollider,UnityEngine.PhysicsModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="93bc210c-8fee-410e-a977-f828403b606b" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_36" />
+      <downstreamSequence idref="Place_37" />
+    </transition>
+    <transition id="Transition_20" label="Placeholder for merging animation">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2099.84863" y="-799.8992" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_20" label="Placeholder for merging animation">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.InvokeUnityObjectMethodEffector,Xareus.Unity.Librairies">
+          <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="type" />
+          <param type="System.Reflection.MethodInfo,mscorlib" name="method">
+            <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="DeclaringType" />
+            <param value="moldGattaiMK2" type="System.String,mscorlib" name="MethodName" />
+            <param type="System.Type[],mscorlib" name="Types">
+              <param value="UnityEngine.GameObject,UnityEngine.CoreModule" type="System.RuntimeType,mscorlib" name="elem0" />
+            </param>
+          </param>
+          <param value="" type="Xareus.Unity.MethodParameters,Xareus.Unity.Utils" name="parameters">
+            <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="elem0">
+              <param value="ebdfa4f4-2ee3-484c-8c11-8c81db12d5de" type="System.Guid,mscorlib" name="UFID" />
+            </param>
+          </param>
+          <param type="UnityEngine.MonoBehaviour,UnityEngine.CoreModule" name="Calling Object">
+            <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/P_mold_A" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_76" />
+      <downstreamSequence idref="Place_39" />
+    </transition>
+    <transition id="Transition_23_1" label="DetectSelectB into Translation toward furnace">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2699.79932" y="-699.0285" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_23_1_1" label="DetectSelectB into Translation toward furnace">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="e25d9655-f39c-4485-a3ee-564318019bc5" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="MovingCraftingObjects,Assembly-CSharp" name="DeclaringType" />
+            <param value="goToGoulag" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="53a886e4-a2f9-4957-81c5-ecda5ec9364f" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localPosition" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="1.1" type="System.Single,mscorlib" name="X" />
+            <param value="0.55" type="System.Single,mscorlib" name="Y" />
+            <param value="2.6" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_79" />
+      <downstreamSequence idref="Place_44" />
+    </transition>
+    <transition id="Transition_23_1_1" label="DetectSelectA into Translation toward furnace">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2699.532" y="-800.057739" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_23_1_1_1" label="DetectSelectA into Translation toward furnace">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="MovingCraftingObjects,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="9c1a9b5c-b751-4290-88ae-649987ece53c" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="MovingCraftingObjects,Assembly-CSharp" name="DeclaringType" />
+            <param value="goToGoulag" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="9808e224-e36b-4857-8da4-d52900b85d4c" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localPosition" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="1.1" type="System.Single,mscorlib" name="X" />
+            <param value="0.55" type="System.Single,mscorlib" name="Y" />
+            <param value="2.6" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_79" />
+      <downstreamSequence idref="Place_43" />
+    </transition>
+    <transition id="Transition_23" label="Correct rotation">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2899.532" y="-800.6941" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_23" label="Correct rotation">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="9808e224-e36b-4857-8da4-d52900b85d4c" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localEulerAngles" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="-90" type="System.Single,mscorlib" name="X" />
+            <param value="90" type="System.Single,mscorlib" name="Y" />
+            <param value="0" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_43" />
+      <downstreamSequence idref="Place_45" />
+    </transition>
+    <transition id="Transition_23_2" label="Correct rotation">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2899.44116" y="-699.9668" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_23_2_1" label="Correct rotation">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="53a886e4-a2f9-4957-81c5-ecda5ec9364f" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localEulerAngles" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="-90" type="System.Single,mscorlib" name="X" />
+            <param value="90" type="System.Single,mscorlib" name="Y" />
+            <param value="0" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_44" />
+      <downstreamSequence idref="Place_45" />
+    </transition>
+    <transition id="Transition_25" label="FadeBlack">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3399.33643" y="-700.391052" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_25" label="FadeBlack">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.InvokeUnityObjectMethodEffector,Xareus.Unity.Librairies">
+          <param value="UIManager,Assembly-CSharp" type="System.Type,mscorlib" name="type" />
+          <param type="System.Reflection.MethodInfo,mscorlib" name="method">
+            <param value="UIManager,Assembly-CSharp" type="System.Type,mscorlib" name="DeclaringType" />
+            <param value="CallFadeOrUnfadeBlack" type="System.String,mscorlib" name="MethodName" />
+            <param type="System.Type[],mscorlib" name="Types">
+              <param value="System.Boolean,mscorlib" type="System.RuntimeType,mscorlib" name="elem0" />
+            </param>
+          </param>
+          <param value="" type="Xareus.Unity.MethodParameters,Xareus.Unity.Utils" name="parameters">
+            <param value="True" type="System.Boolean,mscorlib" name="elem0" />
+          </param>
+          <param type="UnityEngine.MonoBehaviour,UnityEngine.CoreModule" name="Calling Object">
+            <param value="UIManager,Assembly-CSharp" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Persistent Data/UIManager" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_69" />
+      <downstreamSequence idref="Place_46" />
+    </transition>
+    <transition id="Transition_26" label="Play FIRE">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3399.57178" y="-600.0969" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_26" label="Play FIRE">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.PlaySoundEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="06d0a679-1db8-4962-9c39-af9302165a8c" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="UnityEngine.AudioClip,UnityEngine.AudioModule" name="Audio Clip">
+            <param value="2e63cfdd-af77-4fb2-b529-562031aeb408" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param value="10" type="System.Single,mscorlib" name="Volume" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_46" />
+      <downstreamSequence idref="Place_46_0" />
+    </transition>
+    <transition id="Transition_26_1" label="Unfade">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3399.05835" y="-500.9953" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_26_1_1" label="Unfade">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.InvokeUnityObjectMethodEffector,Xareus.Unity.Librairies">
+          <param value="UIManager,Assembly-CSharp" type="System.Type,mscorlib" name="type" />
+          <param type="System.Reflection.MethodInfo,mscorlib" name="method">
+            <param value="UIManager,Assembly-CSharp" type="System.Type,mscorlib" name="DeclaringType" />
+            <param value="CallFadeOrUnfadeBlack" type="System.String,mscorlib" name="MethodName" />
+            <param type="System.Type[],mscorlib" name="Types">
+              <param value="System.Boolean,mscorlib" type="System.RuntimeType,mscorlib" name="elem0" />
+            </param>
+          </param>
+          <param value="" type="Xareus.Unity.MethodParameters,Xareus.Unity.Utils" name="parameters">
+            <param value="False" type="System.Boolean,mscorlib" name="elem0" />
+          </param>
+          <param type="UnityEngine.MonoBehaviour,UnityEngine.CoreModule" name="Calling Object">
+            <param value="UIManager,Assembly-CSharp" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Persistent Data/UIManager" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_46_0" />
+      <downstreamSequence idref="Place_47" />
+    </transition>
+    <transition id="Transition_27" label="Remove MoldA">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3598.17529" y="-699.763855" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_27" label="Remove MoldA">
+        <effectorUpdate classname="SetActiveEffector,Assembly-CSharp">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="00c126a8-fd46-4875-84c9-07d983ddc7bb" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="setActiveValue" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_47" />
+      <downstreamSequence idref="Place_48" />
+    </transition>
+    <transition id="Transition_27_1" label="Remove MoldB">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3599.266" y="-599.1275" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_27_1_1" label="Remove MoldB">
+        <effectorUpdate classname="SetActiveEffector,Assembly-CSharp">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="2d891ea6-f128-486d-a40f-0480795ee0f8" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="setActiveValue" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_48" />
+      <downstreamSequence idref="Place_49" />
+    </transition>
+    <transition id="Transition_27_1_1" label="Spawn cooked Mold">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3599.17529" y="-500.4002" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_27_1_1_1" label="Spawn cooked Mold">
+        <effectorUpdate classname="SetActiveEffector,Assembly-CSharp">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="45682097-06e6-40fd-8886-c110d4aa9fa5" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="setActiveValue" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_49" />
+      <downstreamSequence idref="Place_22" />
+    </transition>
+    <transition id="Transition_28" label="Temporarliy remove force grab Right">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4000.365" y="-599.7598" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_28" label="Temporarliy remove force grab Right">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="1003ebc8-dc82-4ab0-abc8-d9c72d0738f2" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" name="DeclaringType" />
+            <param value="useForceGrab" name="MemberName" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_50" />
+      <downstreamSequence idref="Place_51" />
+    </transition>
+    <transition id="Transition_28_1" label="Temporarliy remove force grab Left">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4000.365" y="-700.331238" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_28_1_1" label="Temporarliy remove force grab Left">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="d99c9b9e-6c24-4f35-861a-5485cdda44f8" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" name="DeclaringType" />
+            <param value="useForceGrab" name="MemberName" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_51" />
+      <downstreamSequence idref="Place_52" />
+      <downstreamSequence idref="Place_53" />
+    </transition>
+    <transition id="Transition_29" label="Rip mold">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4200.079" y="-700.045532" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_29" label="Rip mold">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="CookedMoldInteractor,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="e4e320a7-10e0-472b-8890-1c069cc6674b" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="CookedMoldInteractor,Assembly-CSharp" name="DeclaringType" />
+            <param value="hasBeenRipedOff" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_52" />
+      <downstreamSequence idref="Place_60" />
+    </transition>
+    <transition id="Transition_29_1" label="Rip reversed mold">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4200.93652" y="-600.7598" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_29_1_1" label="Rip reversed mold">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="CookedMoldInteractor,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="1b7f9b34-473b-4ab8-bea6-3fffd1e3aa53" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="CookedMoldInteractor,Assembly-CSharp" name="DeclaringType" />
+            <param value="hasBeenRipedOff" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_53" />
+      <downstreamSequence idref="Place_61" />
+    </transition>
+    <transition id="Transition_30" label="Reactivate force grab Right">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4700.222" y="-599.4741" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_30" label="Reactivate force grab Right">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="1003ebc8-dc82-4ab0-abc8-d9c72d0738f2" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" name="DeclaringType" />
+            <param value="useForceGrab" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_54" />
+      <downstreamSequence idref="Place_59" />
+    </transition>
+    <transition id="Transition_30_1_1" label="Rotate Piggy">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4400.079" y="-600.3313" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_30_1_1_1" label="Rotate Piggy">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Component,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="8e161804-2a10-4d6f-9b72-b52078d6ddae" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localEulerAngles" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="0" type="System.Single,mscorlib" name="X" />
+            <param value="0" type="System.Single,mscorlib" name="Y" />
+            <param value="0" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_60" />
+      <upstreamSequence idref="Place_61" />
+      <downstreamSequence idref="Place_55" />
+    </transition>
+    <transition id="Transition_30_1" label="Reactivate force grab Left">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4699.485" y="-499.331665" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_30_1_1" label="Reactivate force grab Left">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="d99c9b9e-6c24-4f35-861a-5485cdda44f8" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" name="DeclaringType" />
+            <param value="useForceGrab" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_59" />
+      <downstreamSequence idref="Place_33" />
+    </transition>
+    <transition id="Transition_31_1" label="Desactivate InivisbleWall">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4401.8335" y="-500.1306" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_31_1_1" label="Desactivate InivisbleWall">
+        <effectorUpdate classname="SetActiveEffector,Assembly-CSharp">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="780efa4c-7eff-49eb-a6c9-d8586d2bd433" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="setActiveValue" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_55" />
+      <downstreamSequence idref="Place_25" />
+      <downstreamSequence idref="Place_58" />
+    </transition>
+    <transition id="Transition_35" label="Show PineAndBille">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="999.4979" y="-599.521" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_35" label="Show PineAndBille">
+        <effectorUpdate classname="SetActiveEffector,Assembly-CSharp">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObject">
+            <param value="f6ebf168-fbd9-4454-bbe7-653c6cb496a7" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="setActiveValue" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_66" />
+      <downstreamSequence idref="Place_18" />
+    </transition>
+    <transition id="Transition_37" label="RemoveRightHand">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3099.32373" y="-699.01" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_37" label="RemoveRightHand">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="1003ebc8-dc82-4ab0-abc8-d9c72d0738f2" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_45" />
+      <downstreamSequence idref="Place_68" />
+    </transition>
+    <transition id="Transition_38" label="RemoveLeftHand">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3100.32373" y="-599.01" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_38" label="RemoveLeftHand">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="d99c9b9e-6c24-4f35-861a-5485cdda44f8" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_68" />
+      <downstreamSequence idref="Place_69" />
+    </transition>
+    <transition id="Transition_37_1" label="RespawnRightHand">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3999.32373" y="-399.01" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_37_1_1" label="RespawnRightHand">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="1003ebc8-dc82-4ab0-abc8-d9c72d0738f2" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_70" />
+      <downstreamSequence idref="Place_71" />
+    </transition>
+    <transition id="Transition_38_1" label="RespawnLeftHand">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4000.32373" y="-498.01" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_38_1_1" label="RespawnLeftHand">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRRayInteractor,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="d99c9b9e-6c24-4f35-861a-5485cdda44f8" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_71" />
+      <downstreamSequence idref="Place_50" />
+    </transition>
+    <transition id="Transition_39" label="Depop mold clay A">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1900.07178" y="-799.0834" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_39" label="Depop mold clay A">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="aa0d181a-2dfe-4cd6-aa98-f707d88f34df" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_37" />
+      <downstreamSequence idref="Place_73" />
+    </transition>
+    <transition id="Transition_39_1" label="Pop mold A">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2000.07178" y="-700.0834" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_39_1_1" label="Pop mold A">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="4ef9c532-5630-4fdd-a7e9-f092dd79b936" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_73" />
+      <downstreamSequence idref="Place_74" />
+    </transition>
+    <transition id="Transition_39_1_1" label="Depop mold clay B">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2000.07178" y="-600.0834" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_39_1_1_1" label="Depop mold clay B">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="4c77c397-3f70-441c-abaf-8703f2636647" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_74" />
+      <downstreamSequence idref="Place_75" />
+    </transition>
+    <transition id="Transition_39_1_1_1" label="Pop mold B">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1999.07178" y="-500.083344" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_39_1_1_1_1" label="Pop mold B">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="ebdfa4f4-2ee3-484c-8c11-8c81db12d5de" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_75" />
+      <downstreamSequence idref="Place_76" />
+    </transition>
+    <transition id="Transition_40" label="Activate box collider">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2300.86182" y="-599.681152" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_40" label="Activate box collider">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.BoxCollider,UnityEngine.PhysicsModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="f9e0d0fa-1f96-4fdf-b907-b25fe49b05a3" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_77" />
+      <downstreamSequence idref="Place_78" />
+    </transition>
+    <transition id="Transition_40_1" label="Activate box collider2">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2300.86182" y="-500.681152" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_40_1_1" label="Activate box collider2">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.BoxCollider,UnityEngine.PhysicsModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="418f0ced-33ee-40a9-9dfa-8894e8db00b8" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_78" />
+      <downstreamSequence idref="Place_21" />
+    </transition>
+    <transition id="Transition_41" label="Move Mold to the center">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2299.6167" y="-700.9575" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_41" label="Move Mold to the center">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetMemberValueEffector,Xareus.Unity.Librairies">
+          <param value="UnityEngine.Transform,UnityEngine.CoreModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="9808e224-e36b-4857-8da4-d52900b85d4c" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="UnityEngine.Transform,UnityEngine.CoreModule" name="DeclaringType" />
+            <param value="localPosition" name="MemberName" />
+          </param>
+          <param type="UnityEngine.Vector3,UnityEngine.CoreModule" name="Value">
+            <param value="6.8" type="System.Single,mscorlib" name="X" />
+            <param value="2.8" type="System.Single,mscorlib" name="Y" />
+            <param value="0" type="System.Single,mscorlib" name="Z" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_39" />
+      <downstreamSequence idref="Place_77" />
+    </transition>
+    <transition id="Transition_8" label="Wait shake with Pine">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5000.435" y="-500.076843" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_8" label="Wait shake with Pine">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="PiggyInteractor,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="340c0e0d-b528-49a0-93d4-f6a54d03afbe" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="PiggyInteractor,Assembly-CSharp" name="DeclaringType" />
+            <param value="hasBeenShakenWithPine" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="Place_33" />
+      <downstreamSequence idref="Place_28" />
+    </transition>
+    <transition id="Transition_8_1" label="Bille free when Pine Broken">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5500.06" y="-500.451843" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_8_1_1" label="Bille free when Pine Broken">
+        <sensorCheck classname="Xareus.Scenarios.Unity.CheckMemberValueSensor,Xareus.Unity.Librairies">
+          <param value="PineInteractor,Assembly-CSharp" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="35a5ade2-fb6e-45a6-9596-a56441930baf" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.Reflection.MemberInfo,mscorlib" name="Member">
+            <param value="PineInteractor,Assembly-CSharp" name="DeclaringType" />
+            <param value="pineIsBroken" name="MemberName" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="value" />
+        </sensorCheck>
+        <effectorUpdate classname="Xareus.Scenarios.Unity.SetActiveEffector,Xareus.Unity.Librairies">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="GameObject">
+            <param value="8ae7f9c4-b4a5-44bd-8e55-85c0bf84015e" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="SetActive Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_32" />
+      <downstreamSequence idref="Place_27" />
+    </transition>
+    <transition id="Transition_8_1_1" label="Pine is now grabable">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5499.7666" y="-600.9772" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_8_1_1_1" label="Pine is now grabable">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.CapsuleCollider,UnityEngine.PhysicsModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="9f57c0b3-5605-411e-8367-467161d4ef51" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_26" />
+      <downstreamSequence idref="Place_32" />
+    </transition>
+    <transition id="Transition_13" label="Piggy shakable">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4699.1875" y="-699.496033" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_13" label="Piggy shakable">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.CapsuleCollider,UnityEngine.PhysicsModule" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="853acbc9-9113-424a-8f46-a68895da9eba" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="True" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_58" />
+      <downstreamSequence idref="Place_54" />
+    </transition>
+    <transition id="Transition_18" label="Transition_18">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="99.74176" y="-1000.92773" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_18" label="Transition_18">
+        <effectorUpdate classname="Xareus.Scenarios.Unity.InvokeUnityObjectMethodEffector,Xareus.Unity.Librairies">
+          <param value="LocalizedStringModifier,Assembly-CSharp" type="System.Type,mscorlib" name="type" />
+          <param type="System.Reflection.MethodInfo,mscorlib" name="method">
+            <param value="LocalizedStringModifier,Assembly-CSharp" type="System.Type,mscorlib" name="DeclaringType" />
+            <param value="changeEntryName" type="System.String,mscorlib" name="MethodName" />
+            <param type="System.Type[],mscorlib" name="Types">
+              <param value="System.String,mscorlib" type="System.RuntimeType,mscorlib" name="elem0" />
+            </param>
+          </param>
+          <param value="" type="Xareus.Unity.MethodParameters,Xareus.Unity.Utils" name="parameters">
+            <param value="test.long_long" type="System.String,mscorlib" name="elem0" />
+          </param>
+          <param type="UnityEngine.MonoBehaviour,UnityEngine.CoreModule" name="Calling Object">
+            <param value="LocalizedStringModifier,Assembly-CSharp" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/SubtitlesCanvas/Subtitles" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_35" />
+    </transition>
+    <transition id="Transition_31_2_1_1_2_1" label="WAIT TO BE REMOVED">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2498.07715" y="-899.4125" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_31_2_1_1_2_1_1" label="WAIT TO BE REMOVED">
+        <effectorUpdate classname="Xareus.Scenarios.Time.WaitEffector,Xareus.Scenarios.Extra">
+          <param value="3" type="System.Double,mscorlib" name="delay" />
+          <param value="SECOND" type="SEVEN.Time.TimeUnit,SEVEN.Extra" name="unit" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_65_0_1_0" />
+      <downstreamSequence idref="Place_79" />
+    </transition>
+    <transition id="Transition_31_2_1_1_2_1_1_1_1" label="WAIT TO BE REMOVED">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4999.862" y="-399.339" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_31_2_1_1_2_1_1_1_1_1" label="WAIT TO BE REMOVED">
+        <effectorUpdate classname="Xareus.Scenarios.Time.WaitEffector,Xareus.Scenarios.Extra">
+          <param value="1" type="System.Double,mscorlib" name="delay" />
+          <param value="SECOND" type="SEVEN.Time.TimeUnit,SEVEN.Extra" name="unit" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_65_0_1_0_0_0_0" />
+      <downstreamSequence idref="Place_29" />
+    </transition>
+    <transition id="Transition_15" label="Reunite Token">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5199.89" y="-500.943634" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_15" label="Reunite Token" />
+      <upstreamSequence idref="Place_28" />
+      <upstreamSequence idref="Place_29" />
+      <downstreamSequence idref="Place_23" />
+    </transition>
+    <transition id="Transition_16" label="No grab Spoon">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="800.7907" y="-300.6799" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_16" label="No grab Spoon">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.SetComponentEffector,Assembly-CSharp">
+          <param value="UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable,Unity.XR.Interaction.Toolkit" type="System.Type,mscorlib" name="Component Type" />
+          <param type="UnityEngine.Component,UnityEngine.CoreModule" name="Component">
+            <param value="639e4a7b-583f-49b7-a5ff-5a3fe488de7c" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="Value" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_30" />
+      <downstreamSequence idref="Place_15" />
+    </transition>
+    <transition id="Transition_17" label="Line0">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-400.197449" y="-700.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17" label="Line0">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_00" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_0" />
+      <downstreamSequence idref="Place_56" />
+    </transition>
+    <transition id="Transition_17_1" label="Line1">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="-200.197449" y="-700.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_1_1" label="Line1">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_01" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_56" />
+      <downstreamSequence idref="Place_19" />
+    </transition>
+    <transition id="Transition_17_2" label="Line3">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="299.8025" y="-700.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_2_1" label="Line3">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_02" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_9" />
+      <downstreamSequence idref="Place_64" />
+    </transition>
+    <transition id="Transition_17_3" label="Line3">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1199.80249" y="-599.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_3_1" label="Line3">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_03" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_18" />
+      <downstreamSequence idref="Place_20" />
+    </transition>
+    <transition id="Transition_17_4" label="Line4">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="1399.80249" y="-599.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_4_1" label="Line4">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_04" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_20" />
+      <downstreamSequence idref="Place_36" />
+    </transition>
+    <transition id="Transition_17_5" label="Line5">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="2500.80249" y="-700.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_5_1" label="Line5">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_05" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_21" />
+      <downstreamSequence idref="Place_65_0_1_0" />
+    </transition>
+    <transition id="Transition_17_6" label="Line6">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3600.80249" y="-399.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_6_1" label="Line6">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_06" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_22" />
+      <downstreamSequence idref="Place_24" />
+    </transition>
+    <transition id="Transition_17_7" label="Line7">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="3800.80249" y="-399.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_7_1" label="Line7">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_07" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_24" />
+      <downstreamSequence idref="Place_70" />
+    </transition>
+    <transition id="Transition_17_8" label="Line8">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="4700.80273" y="-400.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_8_1" label="Line8">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_08" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_25" />
+      <downstreamSequence idref="Place_65_0_1_0_0_0_0" />
+    </transition>
+    <transition id="Transition_17_9" label="Line9">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5300.80273" y="-600.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_9_1" label="Line9">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_09" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_23" />
+      <downstreamSequence idref="Place_26" />
+    </transition>
+    <transition id="Transition_17_10" label="Line10">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="5800.80273" y="-600.104736" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_17_10_1" label="Line10">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="True" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_10" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_27" />
+      <downstreamSequence idref="Place_38" />
+    </transition>
+    <transition id="Transition_9" label="LineEnd">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="6000.831" y="-599.3508" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_9" label="LineEnd">
+        <effectorUpdate classname="SEVEN.CustomShenanigans.PlaySoundAndShowSubtitlesEffector,Assembly-CSharp">
+          <param value="False" type="System.Boolean,mscorlib" name="Loop" />
+          <param value="False" type="System.Boolean,mscorlib" name="Wait For End" />
+          <param type="LocalizedStringModifier,Assembly-CSharp" name="Text to be changed">
+            <param value="c7faa27e-983f-4db7-a615-951925cdeaa6" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param value="crafting_end" type="ScriptKeys,Assembly-CSharp" name="Subtitles ID" />
+          <param type="UnityEngine.AudioSource,UnityEngine.AudioModule" name="Audio Source">
+            <param value="UnityEngine.AudioSource,UnityEngine.AudioModule" type="System.Type,mscorlib" name="ComponentType" />
+            <param value="/Atelier/person" type="System.String,mscorlib" name="GameObjectPath" />
+          </param>
+          <param value="CraftingAudioScript" type="AudioAssetTableNames,Assembly-CSharp" name="Audio asset table name" />
+        </effectorUpdate>
+      </event>
+      <upstreamSequence idref="Place_38" />
+      <downstreamSequence idref="Place_34" />
+    </transition>
+    <initialSequence idref="Place_0" />
+    <finalSequence idref="Place_34" />
+  </sequence>
+</scenario>
